@@ -1,0 +1,72 @@
+@charset "utf-8";
+*{padding: 0;margin: 0;}
+body,html{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	width: 100%;
+}
+.left{
+	float: left;display: block;
+}
+.right{
+	float: right;display: block;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	height: 0;
+	overflow:hidden;
+	clear: both;
+	visibility: hidden;
+}
+.none{
+	display: none;
+}
+.header>a{
+	border-radius: 1em !important;
+	border-top:1px solid rgba(255,255,255,0.4) !important;
+	box-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.header ul li a{
+	background-color: #333;
+	background-image: linear-gradient(#444,#2d2d2d);
+}
+.header ul li a.ui-btn-active{
+	background: #5393c5;
+	background-image: linear-gradient( #5393c5,#6facd5 );
+	border:1px solid #2373a5;
+
+}
+.header .navbar .ui-btn{
+	border:1px solid #111;
+	padding: 0!important
+
+}
+.header .navbar .ui-btn .ui-btn-inner{
+	width: 100%;height: 100%;
+	display: inline-block;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	padding: 0.6em 0em;
+	/*margin: 0 auto;*/
+}
+.ui-footer{
+	background-image: linear-gradient( #f0f0f0,#ddd );
+	-webkit-background-image: linear-gradient( #f0f0f0,#ddd );
+	-moz-background-image: linear-gradient( #f0f0f0,#ddd );
+	-o-background-image: linear-gradient( #f0f0f0,#ddd );
+	border-bottom: 1px solid #b3b3b3!important;
+	border-top: 1px solid #b3b3b3!important;
+}
+.ui-footer p{
+	margin: 1em 0;color:  !important
+}
+#download a:active{
+	background: #5393c5;
+	background-image: linear-gradient( #5393c5,#6facd5 );
+	border:1px solid #2373a5;
+	box-shadow: none;
+	outline: none;
+}
