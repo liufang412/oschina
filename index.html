@@ -9,15 +9,7 @@
 </head>
 <body>
 	<div data-role='page' id="index">
-	<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/index.css">
-	 <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-		var resp = <%=(JSONObject)request.getAttribute("resp")%>;
-		loadHospitalInfo(resp)
-	</script>
-    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+		
 		<div data-role='header' class="header"  data-theme='b'>
 			<h1 class="ui-title">开源中国</h1>
 			<div data-role="navbar">
@@ -31,6 +23,11 @@
 			</div>
 		</div>
 		<div data-role='main' class="main " data-theme='b'>
+			<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+			<link rel="stylesheet" href="css/common.css">
+			<link rel="stylesheet" href="css/index.css">
+			 <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
 			<ul data-role='listview'>
 				<li>
 					<a href="">
