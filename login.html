@@ -8,7 +8,6 @@
 <body>
 	<div data-role='page' id="index">
 		
-	    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
 		<div data-role='header' class="header"  data-theme='b'>
 			<a href="index.html" data-ajax="false" data-rel="back" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all">返回</a>
 			<h1 class="ui-title">登录</h1>
@@ -42,10 +41,14 @@
 				}
 		    </style>
 		    <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-		      <script>
-				var resp = <%=(JSONObject)request.getAttribute("resp")%>;
-				loadHospitalInfo(resp)
-			</script>
+		    <script type="text/javascript">
+		    	$(document).bind("mobileinit", function() {
+		               //disable ajax nav
+		               $.mobile.ajaxEnabled=false
+		       });
+		    </script>
+	    	<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+
 			<div class="ui-content">
 				<form action="">
 					<fieldset>
