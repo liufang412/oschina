@@ -4,23 +4,21 @@
 	<meta charset="UTF-8">
 	<title>问答</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	
-    <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+	 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="css/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).bind("mobileinit", function() {
+        //disable ajax nav
+        $.mobile.ajaxEnabled = false
+    });
+    </script>
+    <script src="css/jquery.mobile.min.js"></script>
    
 </head>
 <body>
 	<div data-role='page' id="index">
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/index.css">
-	<style type="text/css">
-		.header>a{
-			border-radius: 1em !important;
-			border-top:1px solid rgba(255,255,255,0.4) !important;
-			box-shadow: 0 1px 0 rgba(255,255,255,.3);
-		}
-    </style>
 		<div data-role='header' class="header"  data-theme='b'>
 			<a href="index.html" data-ajax="false" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all">首页</a>
 			<h1 class="ui-title">问答</h1>

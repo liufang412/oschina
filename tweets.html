@@ -4,10 +4,17 @@
 	<meta charset="UTF-8">
 	<title>开源中国（oschina.NET）</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	
-    <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+	 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="css/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).bind("mobileinit", function() {
+        //disable ajax nav
+        $.mobile.ajaxEnabled = false
+    });
+    </script>
+    <script src="css/jquery.mobile.min.js"></script>
     
 </head>
 <body>
